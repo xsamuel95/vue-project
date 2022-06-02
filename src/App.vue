@@ -10,9 +10,9 @@
 <template>
   <div>
     <h1>Hello World</h1>
-    <p>This is a simple example of a Vue.js component.</p>
+    <p>compteur</p>
     <p>{{counter}}</p>
-    <button @click="increment">Increment</button>
+    <button @click="increment">Incrementer</button> <br>
     <input v-model="counter" type="number" />
     <button @click="counter = 0">Reset</button>
   </div> 
