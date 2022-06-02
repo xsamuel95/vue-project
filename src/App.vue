@@ -1,6 +1,5 @@
 <script setup>
-import Compteur from './components/Compteur.vue';
-import DemoJWT from './components/DemoJWT.vue';
+import compteur from './components/compteur.vue';
 import tableau from './components/tableau.vue';
 </script>
 
