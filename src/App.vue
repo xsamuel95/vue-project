@@ -1,4 +1,5 @@
 <script setup>
+App.vue>style>@import 'bootstrap/dist/css/bootstrap.min.css'; 
 import compteur from './components/compteur.vue';
 import tableau from './components/tableau.vue';
 </script>
