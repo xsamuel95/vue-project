@@ -1,5 +1,7 @@
 <script setup>
   import {ref} from "vue";
+  import * as jose from 'jose';
+
   const compteur = ref(0);
   setInterval( () => {
     compteur.value++;
