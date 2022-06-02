@@ -1,33 +1,14 @@
 <script setup>
-  import {ref} from "vue";
-  import * as jose from 'jose';
-
-  const compteur = ref(0);
-  setInterval( () => {
-    compteur.value++;
-  }, 1000 )
-  function resetCompteur() {
-    compteur.value = 0;
-  }
+import Compteur from './components/Compteur.vue';
+import DemoJWT from './components/DemoJWT.vue';
+import tableau from './components/tableau.vue';
 </script>
 
 <template>
-
-  <main>
-    <h1>Hello world</h1>
-
-    <p>
-      compteur : {{ compteur }}
-    </p>
-
-    <div>
-      <button @click="resetCompteur()">Reset compteur</button>
-
-      <input type="number" v-model="compteur">
-    </div>
-
-  </main>
-
+    <Compteur></Compteur>
+    <DemoJWT></DemoJWT>
+    <LoopTabVue></LoopTabVue>
 </template>
 
-<style></style>
+<style>
+</style>
