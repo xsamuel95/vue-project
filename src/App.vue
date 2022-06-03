@@ -11,4 +11,8 @@ import tableau from './components/tableau.vue';
 </template>
 
 <style>
+  @import 'bootstrap/dist/css/bootstrap.min.css';
+  nav a{
+    color: white !important;
+  }
 </style>
