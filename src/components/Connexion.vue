@@ -7,13 +7,14 @@
     const email = ref("");
     const router = useRouter();
     const route = useRoute();
+    const rememberMe = ref(false);
     const onSubmit = () => {
         if (email.value && name.value) {
             const userConnect = ref({
                 name: name.value,
                 email: email.value,
             })
-            fakeConnection(userConnect.value);
+            fakeConnection(userConnect.value, rememberMe.value);
             router.push("/");
         }
     }
@@ -31,6 +32,11 @@
             <input type="email" class="form-control" id="email" placeholder="Votre email" v-model="email">
         </div>
 
+        <div class="form-group">
+            <input type="checkbox" name="rememberMe" id="rememberMe" class="mx-1" v-model="rememberMe">
+            <label for="rememberMe">Se souvenir de moi</label>
+        </div>
+        
         <div class="mt-2">
             <button type="submit" class="btn btn-success">Connexion</button>
         </div>
@@ -38,4 +44,3 @@
 </template>
 
 <style>
-</style>
